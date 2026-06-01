@@ -1,6 +1,6 @@
 import express from "express";
-import { pullGacha, addItem, getItems, getUserItems, getPullHistory, recycleItem, claimDaily } from "../controllers/ItemController.ts";
-import { verifyToken } from "../utils/AuthMiddleware.ts";
+import { pullGacha, addItem, getItems, getUserItems, getPullHistory, recycleItem, claimDaily } from "../controllers/ItemController.js";
+import { verifyToken } from "../utils/AuthMiddleware.js";
 
 const itemRoutes = express.Router();
 

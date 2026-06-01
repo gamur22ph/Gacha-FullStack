@@ -1,6 +1,6 @@
 import express from "express"
-import { cancelSubscription, mockCheckOut } from "../controllers/SubscriptionController.ts";
-import { verifyToken } from "../utils/AuthMiddleware.ts";
+import { cancelSubscription, mockCheckOut } from "../controllers/SubscriptionController.js";
+import { verifyToken } from "../utils/AuthMiddleware.js";
 
 const subscriptionRoutes = express.Router();
 

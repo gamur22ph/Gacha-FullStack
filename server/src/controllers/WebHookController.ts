@@ -1,7 +1,7 @@
 import type {Request, Response } from "express";
 import Stripe from "stripe";
-import { User, type PlanTierType, type SubscriptionStatusType } from "../models/User.ts";
-import { AddActivityLog } from "../utils/ActivityLogsUtils.ts";
+import { User, type PlanTierType, type SubscriptionStatusType } from "../models/User.js";
+import { AddActivityLog } from "../utils/ActivityLogsUtils.js";
 
 
 

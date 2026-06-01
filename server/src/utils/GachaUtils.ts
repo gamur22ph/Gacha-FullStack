@@ -1,5 +1,5 @@
-import { type IItem } from "../models/Item.ts";
-import { User, type IUser } from "../models/User.ts";
+import { type IItem } from "../models/Item.js";
+import { User, type IUser } from "../models/User.js";
 
 const RARITY_RATES = {
   SSR: 0.01, // 1.0% chance

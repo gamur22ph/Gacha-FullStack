@@ -1,4 +1,4 @@
-import { ActivityLog } from "../models/ActivityLog.ts"
+import { ActivityLog } from "../models/ActivityLog.js"
 
 export const AddActivityLog = (userId : string, activity_log_description: string) => {
     ActivityLog.create({

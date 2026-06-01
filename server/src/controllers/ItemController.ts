@@ -1,12 +1,12 @@
 import type { Request, Response } from 'express';
-import { type IItem, Item } from '../models/Item.ts';
-import { grantGachaItem, rollGacha } from '../utils/GachaUtils.ts';
-import type { AuthenticatedRequest } from '../utils/AuthMiddleware.ts';
-import { User, type IUser } from '../models/User.ts';
-import { PullHistory, type IPullHistory } from '../models/PullHistory.ts';
+import { type IItem, Item } from '../models/Item.js';
+import { grantGachaItem, rollGacha } from '../utils/GachaUtils.js';
+import type { AuthenticatedRequest } from '../utils/AuthMiddleware.js';
+import { User, type IUser } from '../models/User.js';
+import { PullHistory, type IPullHistory } from '../models/PullHistory.js';
 import jwt from 'jsonwebtoken';
 import { resourceLimits } from 'node:worker_threads';
-import { AddActivityLog } from '../utils/ActivityLogsUtils.ts';
+import { AddActivityLog } from '../utils/ActivityLogsUtils.js';
 
 interface GachaRequest extends AuthenticatedRequest{
     body: {

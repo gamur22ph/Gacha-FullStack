@@ -1,6 +1,6 @@
 import express from "express";
-import { getUsers, createUser, updateUser, deleteUser, verifyUserEmail, loginUser, requestResetPassword, resetPassword, getDataOnPayment, handleFragmentConversion, getActivityLogs, changePassword, loginGuestUser } from "../controllers/UserController.ts";
-import { verifyResetToken, verifyToken } from "../utils/AuthMiddleware.ts";
+import { getUsers, createUser, updateUser, deleteUser, verifyUserEmail, loginUser, requestResetPassword, resetPassword, getDataOnPayment, handleFragmentConversion, getActivityLogs, changePassword, loginGuestUser } from "../controllers/UserController.js";
+import { verifyResetToken, verifyToken } from "../utils/AuthMiddleware.js";
 
 const userRoutes = express.Router();
 

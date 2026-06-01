@@ -3,12 +3,12 @@ import type { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import userRoutes from '../routes/UserRoutes.ts';
-import itemRoutes from '../routes/ItemRoutes.ts';
-import subscriptionRoutes from '../routes/SubscriptionRoutes.ts';
-import webHookRoutes from '../routes/WebHookRoutes.ts';
+import userRoutes from './routes/UserRoutes.js';
+import itemRoutes from './routes/ItemRoutes.js';
+import subscriptionRoutes from './routes/SubscriptionRoutes.js';
+import webHookRoutes from './routes/WebHookRoutes.js';
 import rateLimit from 'express-rate-limit';
-import authRoutes from '../routes/AuthRoutes.ts';
+import authRoutes from './routes/AuthRoutes.js';
 import helmet from 'helmet';
 
 dotenv.config()
@@ -70,6 +70,10 @@ app.use('/api/auth', authLimiter, authRoutes)
 const PORT = (process.env.PORT || 5000) as number;
 const MONGO_URI = process.env.MONGODB_URI || '';
 
+if (!MONGO_URI) {
+  throw new Error("MONGO_URI environment variable is missing!");
+}
+
 mongoose.connect(MONGO_URI)
   .then(() => {
     console.log("MongoDB Connected Successfully");
@@ -77,6 +81,8 @@ mongoose.connect(MONGO_URI)
   .catch((err) => {
     console.error("MongoDB Connection Error:", err);
   });
+
+
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Server is running with TypeScript!');

@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { User } from '../models/User.ts';
+import { User } from '../models/User.js';
 
 // This extends Express's Request type so TypeScript knows 'req.userId' is allowed
 export interface AuthenticatedRequest extends Request {

@@ -1,12 +1,12 @@
 import type { Request, Response } from "express";
-import { User, type IUser } from "../models/User.ts";
+import { User, type IUser } from "../models/User.js";
 import jwt from 'jsonwebtoken';
-import { sendResetPasswordEmail, sendVerificationEmail } from "../utils/SendEmail.ts";
+import { sendResetPasswordEmail, sendVerificationEmail } from "../utils/SendEmail.js";
 import bcrypt from "bcryptjs";
-import type { AuthenticatedRequest } from "../utils/AuthMiddleware.ts";
-import { getIdentifierType } from "../utils/Helper.ts";
-import { ActivityLog } from "../models/ActivityLog.ts";
-import { AddActivityLog } from "../utils/ActivityLogsUtils.ts";
+import type { AuthenticatedRequest } from "../utils/AuthMiddleware.js";
+import { getIdentifierType } from "../utils/Helper.js";
+import { ActivityLog } from "../models/ActivityLog.js";
+import { AddActivityLog } from "../utils/ActivityLogsUtils.js";
 
 interface UserRequest extends Request{
     body: {

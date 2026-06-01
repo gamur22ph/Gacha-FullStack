@@ -1,8 +1,8 @@
 import type { Response } from "express";
 import Stripe from "stripe";
-import type { AuthenticatedRequest } from "../utils/AuthMiddleware.ts";
-import { User } from "../models/User.ts";
-import { AddActivityLog } from "../utils/ActivityLogsUtils.ts";
+import type { AuthenticatedRequest } from "../utils/AuthMiddleware.js";
+import { User } from "../models/User.js";
+import { AddActivityLog } from "../utils/ActivityLogsUtils.js";
 
 
 

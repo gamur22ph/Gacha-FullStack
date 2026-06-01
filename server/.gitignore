@@ -4,6 +4,7 @@ node_modules
 # Environment variables (Crucial!)
 .env
 .env.local
+.env.*
 
 # Logs
 npm-debug.log*
@@ -13,3 +14,7 @@ yarn-error.log*
 # IDE/System files
 .DS_Store
 .vscode
+
+# Builds
+build
+dist
