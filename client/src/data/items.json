@@ -1,0 +1,34 @@
+[
+  {
+    "itemId": "item_01",
+    "name": "Aemeath",
+    "rarity": 5,
+    "iconPath": "/src/assets/Aemeath.webp",
+    "description": "Look! A laser sword. Pretty KEwL RayyT???",
+    "fragments": 20
+  },
+  {
+    "itemId": "item_02",
+    "name": "Watermelon",
+    "rarity": 4,
+    "iconPath": "/src/assets/watermelon.png",
+    "description": "Give me a slice to get through this summer.",
+    "fragments": 4
+  },
+  {
+    "itemId": "item_03",
+    "name": "Blue Eyes White Dragon",
+    "rarity": 4,
+    "iconPath": "/src/assets/BEWD.jpg",
+    "description": "Yugioh Monster pulled out from the card",
+    "fragments": 4
+  },
+  {
+    "itemId": "item_04",
+    "name": "Dull Blade",
+    "rarity": 3,
+    "iconPath": "/src/assets/dull_blade.png",
+    "description": "Nobody cares.",
+    "fragments": 1
+  }
+]

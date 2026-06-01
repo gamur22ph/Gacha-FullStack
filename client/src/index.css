@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('src/assets/fonts/merchant-copy/Merchant_Copy_Doublesize.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while loading */
+}
+
+@font-face {
+  font-family: 'LowerPixelFont';
+  src: url('src/assets/fonts/lower-pixel/LowresPixel-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while loading */
+}
+
+.font-pixel {
+  font-family: 'PixelFont', monospace;
+}
+
+.font-pixel-low {
+  font-family: 'LowerPixelFont', monospace;
+}
+
+.gacha-background {
+  background-image: url('your-image-path.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* The magic line */
+  background-attachment: fixed; 
+  
+  /* Ensure it covers the whole screen */
+  min-height: 100vh;
+  width: 100%;
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
