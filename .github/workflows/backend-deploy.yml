@@ -45,10 +45,10 @@ jobs:
             echo "${{ secrets.ENV_FILE }}" > .env
             
             # Pull the latest image
-            docker-compose pull
+            docker compose pull
             
             # Restart the services
-            docker-compose up -d --force-recreate --remove-orphans
+            docker compose up -d --force-recreate --remove-orphans
             
             # Clean up old images
             docker image prune -f
