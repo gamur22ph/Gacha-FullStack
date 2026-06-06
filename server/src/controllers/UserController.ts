@@ -162,6 +162,8 @@ export const loginUser = async (req: LoginRequest, res: Response) => {
 export const loginGuestUser = async (req: VerificationRequest, res: Response) => {
   const { token } = req.body;
 
+  console.log("TEST CI/CD");
+
   if (token){
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as { id : string };
