@@ -74,6 +74,7 @@ const PORT = (process.env.PORT || 5000) as number;
 const MONGO_URI = process.env.MONGODB_URI || '';
 
 console.log(MONGO_URI);
+
 if (!MONGO_URI) {
   throw new Error("MONGO_URI environment variable is missing!");
 }
