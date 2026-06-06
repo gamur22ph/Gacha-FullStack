@@ -18,7 +18,7 @@ export const GachaPortrait = ({itemId }: {itemId : string}) =>{
     if (!itemDetails) return (<>Loading</>);
     return (
     <div key={itemId} className={`bg-blue-950 w-24 h-24 outline-2 ${outlineRarityColors[itemDetails.rarity]} hover:bg-blue-700 hover:scale-110 transition-colors`}>
-      <img src={itemDetails.iconPath} alt={itemDetails.name} />
+      <img src={itemDetails.iconPath} alt={itemDetails.name} className="object-cover"/>
       {/* <h3>{itemDetails.name}</h3> */}
     </div>
   );

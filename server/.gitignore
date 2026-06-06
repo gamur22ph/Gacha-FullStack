@@ -4,7 +4,7 @@ node_modules
 # Environment variables (Crucial!)
 .env
 .env.local
-.env.*
+.env.docker
 
 # Logs
 npm-debug.log*

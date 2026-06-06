@@ -1,6 +1,5 @@
 import { useEffect, useState, type JSX } from 'react';
 import type { GachaModalProps } from '../props/GachaModalProps';
-import quartero from '../assets/quartero.png';
 import { getUserPullHistory, item3Stars, item4Stars, item5Stars, itemDatabase } from '../services/ItemServices';
 import { backgroundRarityColors, outlineRarityColors, type ItemData } from '../types/ItemData';
 

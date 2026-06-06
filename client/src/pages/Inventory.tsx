@@ -1,7 +1,6 @@
 import { useEffect, useState, type JSX } from "react";
 import { outlineRarityColors, type ItemData } from "../types/ItemData";
 import { GachaPortrait, getUserItems, itemDatabase } from "../services/ItemServices";
-import aemeath from "../assets/Aemeath.webp";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { authFetch } from "../helpers/AuthFetch";

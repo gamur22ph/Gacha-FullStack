@@ -8,7 +8,6 @@ export const isTokenValid = (token: string) => {
     console.log(decoded);
     if (!decoded.exp) return false;
 
-    console.log(token);
     const currentTime = Date.now() / 1000; // Convert to seconds
     console.log(decoded.exp > currentTime);
     // If current time is greater than exp time, it's expired

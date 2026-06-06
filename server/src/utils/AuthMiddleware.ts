@@ -14,7 +14,7 @@ export const verifyToken = (req: AuthenticatedRequest, res: Response, next: Next
   if (!token) {
     return res.status(401).json({ message: "Access Denied: No token provided" });
   }
-  console.log(token);
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as { id: string };
     console.log("AuthMiddleware.ts line 20");
@@ -35,7 +35,7 @@ export const verifyResetToken = async (req: AuthenticatedRequest, res: Response,
   if (!token) {
     return res.status(401).json({ message: "Access Denied: No token provided" });
   }
-  console.log(token);
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_RESET_SECRET as string) as { userId: string, currentHash: string };
     const user = await User.findById(decoded.userId);

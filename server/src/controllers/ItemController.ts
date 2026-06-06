@@ -18,8 +18,6 @@ interface ItemAddRequest extends Request{
     body: {
         itemId: string;
         rarity: number;
-        price: number;
-        rollWeight: number;
     }
 }
 

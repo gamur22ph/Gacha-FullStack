@@ -1,0 +1,32 @@
+[
+    {
+        "itemId": "aemeath",
+        "rarity": 5,
+        "recycle_currency": 20
+    },
+    {
+        "itemId": "leon",
+        "rarity": 5,
+        "recycle_currency": 20
+    },
+    {
+        "itemId": "ada",
+        "rarity": 5,
+        "recycle_currency": 20
+    },
+    {
+        "itemId": "doom_slayer",
+        "rarity": 5,
+        "recycle_currency": 20
+    },
+    {
+        "itemId": "divine_rapier",
+        "rarity": 5,
+        "recycle_currency": 20
+    },
+    {
+        "itemId": "bfg",
+        "rarity": 5,
+        "recycle_currency": 20
+    }
+]

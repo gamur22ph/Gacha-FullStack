@@ -1,0 +1,27 @@
+[
+    {
+        "itemId": "dull_blade",
+        "rarity": 3,
+        "recycle_currency": 1
+    },
+    {
+        "itemId": "rat",
+        "rarity": 3,
+        "recycle_currency": 1
+    },
+    {
+        "itemId": "zombie",
+        "rarity": 3,
+        "recycle_currency": 1
+    },
+    {
+        "itemId": "imp_doom",
+        "rarity": 3,
+        "recycle_currency": 1
+    },
+    {
+        "itemId": "quail_egg",
+        "rarity": 3,
+        "recycle_currency": 1
+    }
+]

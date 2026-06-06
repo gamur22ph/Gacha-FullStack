@@ -10,6 +10,9 @@ import webHookRoutes from './routes/WebHookRoutes.js';
 import rateLimit from 'express-rate-limit';
 import authRoutes from './routes/AuthRoutes.js';
 import helmet from 'helmet';
+import dns from 'node:dns';
+
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 
 dotenv.config()
 

@@ -3,8 +3,6 @@ import mernLogo from '../assets/design/MERN-logo.png';
 import authenticationLogo from '../assets/design/authentication.png';
 import tailwindLogo from '../assets/design/tailwind-logo.png';
 import stripePaymentImage from '../assets/design/stripe-payment-2.png';
-import nightBackground from '../assets/night-background.jpg'
-import watermelon from '../assets/watermelon.png';
 import { motion } from 'framer-motion';
 import HeroBanner from '../components/HeroBanner';
 

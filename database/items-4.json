@@ -1,0 +1,27 @@
+[
+    {
+        "itemId": "blue_eyes_white_dragon",
+        "rarity": 4,
+        "recycle_currency": 4
+    },
+    {
+        "itemId": "watermelon",
+        "rarity": 4,
+        "recycle_currency": 4
+    },
+    {
+        "itemId": "tmp",
+        "rarity": 4,
+        "recycle_currency": 4
+    },
+    {
+        "itemId": "golden_apple",
+        "rarity": 4,
+        "recycle_currency": 4
+    },
+    {
+        "itemId": "chicken_adobo",
+        "rarity": 4,
+        "recycle_currency": 4
+    }
+]
