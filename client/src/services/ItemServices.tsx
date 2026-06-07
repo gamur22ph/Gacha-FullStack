@@ -4,7 +4,7 @@ import { ENV } from "../helpers/EnvUtils";
 
 export const itemDatabase : Record<string, ItemData> = items.reduce((map, item) => {
   map[item.itemId] = item as ItemData;
-  map[item.itemId].iconPath = new URL((import.meta.env.VITE_ENV == "dev" ?"../../public/" : "/Gacha-FullStack/") + map[item.itemId].iconPath, import.meta.url).href;
+  map[item.itemId].iconPath = new URL((import.meta.env.VITE_ENV == "dev" ?"../../public/" : "/") + map[item.itemId].iconPath, import.meta.url).href;
   console.log(map[item.itemId].iconPath);
   return map;
 }, {} as Record<string, ItemData>);
