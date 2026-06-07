@@ -12,7 +12,7 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
   // Sample data structure expected from your MERN backend
   const slides = [
     {
-      image: {nightBackground},
+      image: new URL(nightBackground, import.meta.url).href,
       title: "Gacha System",
       subtitle: "Get items and win rare stuffs. Test your luck now.",
       ctaText: "Try Gacha",
@@ -20,14 +20,14 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
       ctaButton: (token && !isTokenValid(token) ? () => onHeroBannerClick() : () => onHeroBannerClick())
     },
     {
-      image: {greenWallpaper},
+      image: new URL(greenWallpaper, import.meta.url).href,
       title: "Full Stack Web Application",
       subtitle: "MERN Stack App with full authentication, payment system, and a Gacha System for proof of concept.",
       ctaText: "Show Details",
       ctaLink: "#system-details"
     },
     {
-      image: {devWallpaper},
+      image: new URL(devWallpaper, import.meta.url).href,
       title: "Developer",
       subtitle: "Take a look at the developer's portfolio and projects.",
       ctaText: "View Portfolio",
@@ -49,6 +49,7 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    console.log(slides[newIndex].image);
   };
 
   // Auto-play Effect
