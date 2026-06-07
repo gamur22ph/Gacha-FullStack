@@ -7,7 +7,9 @@ import { AuthProvider } from './contexts/AuthContext.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AuthProvider>
-      <App />
+      <div className='flex flex-col min-h-screen'>
+        <App />
+      </div>
     </AuthProvider>  
   </StrictMode>,
 )
