@@ -9,7 +9,7 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
   // Sample data structure expected from your MERN backend
   const slides = [
     {
-      image: "src/assets/night-background.jpg",
+      image: "images/night-background.jpg",
       title: "Gacha System",
       subtitle: "Get items and win rare stuffs. Test your luck now.",
       ctaText: "Try Gacha",
@@ -17,14 +17,14 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
       ctaButton: (token && !isTokenValid(token) ? () => onHeroBannerClick() : () => onHeroBannerClick())
     },
     {
-      image: "src/assets/design/green-wp.avif",
+      image: "images/design/green-wp.avif",
       title: "Full Stack Web Application",
       subtitle: "MERN Stack App with full authentication, payment system, and a Gacha System for proof of concept.",
       ctaText: "Show Details",
       ctaLink: "#system-details"
     },
     {
-      image: "src/assets/design/dev-wallpaper.jpg",
+      image: "images/design/dev-wallpaper.jpg",
       title: "Developer",
       subtitle: "Take a look at the developer's portfolio and projects.",
       ctaText: "View Portfolio",

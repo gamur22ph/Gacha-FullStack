@@ -1,5 +1,5 @@
 import { registerUser, loginUser, requestResetPassword, loginGuestUser } from '../services/AuthServices';
-import typescriptIcon from '../assets/typescript.png'
+import typescriptIcon from '../../public/images/typescript.png'
 import type { AuthModalProps } from '../props/AuthModalProps';
 import { useForm, type FieldValues, type SubmitHandler } from "react-hook-form";
 

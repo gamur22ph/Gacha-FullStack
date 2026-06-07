@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import nightBackground from '../assets/night-background.jpg';
+import nightBackground from '../../public/images/night-background.jpg';
 import type { GachaModalType } from '../props/GachaModalProps';
 import GachaModal from '../components/GachaModal';
 import { gachaPull } from '../services/GachaServices';

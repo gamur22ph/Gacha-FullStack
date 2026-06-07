@@ -1,6 +1,6 @@
-import githubIcon from '../assets/socials/github-icon.webp';
-import linkedInIcon from '../assets/socials/linkedin.svg';
-import itchIoIcon from '../assets/socials/itchio-icon.svg';
+import githubIcon from '../../public/images/socials/github-icon.webp';
+import linkedInIcon from '../../public/images/socials/linkedin.svg';
+import itchIoIcon from '../../public/images/socials/itchio-icon.svg';
 
 const Footer = () => {
     return (
