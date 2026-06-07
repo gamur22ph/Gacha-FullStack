@@ -8,7 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Gacha-FullStack/',
   // Docker Settings
   server: {
     allowedHosts: ['host.docker.internal'],
