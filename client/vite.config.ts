@@ -8,15 +8,14 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/Gacha-FullStack/',
+  // Docker Settings
   server: {
-    // This allows the Docker host to access the Vite dev server
     allowedHosts: ['host.docker.internal'],
-    
-    // You likely already have these if you're using Docker:
     host: true, 
     port: 5173,
     watch: {
-      usePolling: true, // Often needed for Docker file changes to sync
+      usePolling: true,
     },
   },
 })
