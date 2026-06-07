@@ -4,7 +4,7 @@ import { ENV } from "../helpers/EnvUtils";
 
 export const itemDatabase : Record<string, ItemData> = items.reduce((map, item) => {
   map[item.itemId] = item as ItemData;
-  map[item.itemId].iconPath = new URL("../assets/" + map[item.itemId].iconPath, import.meta.url).href;
+  map[item.itemId].iconPath = new URL((import.meta.env.VITE_ENV == "dev" ?"../../public/" : "/assets/") + map[item.itemId].iconPath, import.meta.url).href;
   console.log(map[item.itemId].iconPath);
   return map;
 }, {} as Record<string, ItemData>);
@@ -15,11 +15,11 @@ export const item3Stars = Object.values(itemDatabase).filter((item) => item.rari
 
 export const GachaPortrait = ({itemId }: {itemId : string}) =>{
     const itemDetails = itemDatabase[itemId];
-    console.log(itemDetails.iconPath);
+
     if (!itemDetails) return (<>Loading</>);
     return (
     <div key={itemId} className={`bg-blue-950 w-24 h-24 outline-2 ${outlineRarityColors[itemDetails.rarity]} hover:bg-blue-700 hover:scale-110 transition-colors`}>
-      <img src={`url(${itemDetails.iconPath})`} alt={itemDetails.name} className="object-cover"/>
+      <img src={itemDetails.iconPath} alt={itemDetails.name} className="object-cover"/>
       {/* <h3>{itemDetails.name}</h3> */}
     </div>
   );
