@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import { useAuth } from "../contexts/AuthContext"
-import { PriceIds } from "../data/plans";
 import type { SubscriptionProps } from "../props/SubscriptionProps";
 import { useEffect, useState } from "react";
 import { goCheckOut } from "../services/SubscriptionServices";

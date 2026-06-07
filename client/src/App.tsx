@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Home from './pages/Home.tsx';
 import Dashboard from './pages/Dashboard.tsx';
 import Inventory from './pages/Inventory.tsx';

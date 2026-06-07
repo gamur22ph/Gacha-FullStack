@@ -1,6 +1,5 @@
 import { outlineRarityColors, type ItemData } from "../types/ItemData";
 import items from "../data/items.json";
-import type { UserData } from "../types/UserData";
 import { ENV } from "../helpers/EnvUtils";
 
 export const itemDatabase : Record<string, ItemData> = items.reduce((map, item) => {

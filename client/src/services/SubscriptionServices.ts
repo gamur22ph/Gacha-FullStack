@@ -1,4 +1,3 @@
-import { useAuth } from "../contexts/AuthContext";
 import { PriceIds } from "../data/plans";
 import { ENV } from "../helpers/EnvUtils";
 

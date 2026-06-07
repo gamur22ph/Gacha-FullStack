@@ -11,7 +11,6 @@ interface ResetPasswordFormField {
 const ResetPassword = () => {
     const {register, handleSubmit, watch, setError, formState : { errors, isSubmitting }} = useForm<ResetPasswordFormField>();
     const [searchParams] = useSearchParams();
-    const [loading, setLoading] = useState(true);
     const [message, setMessage] = useState('');
     const [success, setSuccess] = useState(false);
     const token = searchParams.get('token') || '';
@@ -21,7 +20,6 @@ const ResetPassword = () => {
     useEffect(() => {
         if (!token) {
             setMessage('No token found in the link.');
-            setLoading(false);
             return;
         }
     }, [searchParams]);

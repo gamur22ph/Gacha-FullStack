@@ -1,4 +1,4 @@
-import { useEffect, useState, type JSX } from 'react';
+import { useEffect, useState } from 'react';
 import type { GachaModalProps } from '../props/GachaModalProps';
 import { getUserPullHistory, item3Stars, item4Stars, item5Stars, itemDatabase } from '../services/ItemServices';
 import { backgroundRarityColors, outlineRarityColors, type ItemData } from '../types/ItemData';
@@ -9,13 +9,13 @@ interface PullHistoryData{
   timestamp: string, 
 }
 
-interface IPullHistory{
-  pullHistory: PullHistoryData[],
-  totalPages: string
-}
+// interface IPullHistory{
+//   pullHistory: PullHistoryData[],
+//   totalPages: string
+// }
 
 const GachaModal = ({ modalType, extMessage, onClose, items }: GachaModalProps) => {
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
   const [history, setHistory] = useState<PullHistoryData[]>([]);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -85,7 +85,7 @@ const GachaModal = ({ modalType, extMessage, onClose, items }: GachaModalProps) 
                 <div className="w-full flex justify-center p-3 text-2xl">
                 You win!
                 </div>
-                {message}
+                {/* {message} */}
                 <div className="flex flex-row justify-center pb-3 gap-4">
                   {displayItems(0, 4)}
                 </div>

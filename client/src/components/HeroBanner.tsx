@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Optional: Install lucide-react for clean icons
 import { useAuth } from '../contexts/AuthContext';
 import { isTokenValid } from '../helpers/TokenValidatorUtils';

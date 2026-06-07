@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import GameShowcase from "../components/GameShowcase"
 import githubIcon from "../assets/socials/github-icon.webp"
 import linkedInIcon from "../assets/socials/linkedin.png"

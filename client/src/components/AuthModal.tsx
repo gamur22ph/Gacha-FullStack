@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { registerUser, loginUser, requestResetPassword, loginGuestUser } from '../services/AuthServices';
 import typescriptIcon from '../assets/typescript.png'
 import type { AuthModalProps } from '../props/AuthModalProps';
@@ -48,7 +47,7 @@ const AuthModal = ({ modalType, onClose, onSwitch, onLoginSuccess }: AuthModalPr
         const data = await registerUser(formData);
         console.log('Registered:', data);
       } else if (modalType === 'change password') {
-        const data = await requestResetPassword(formData);
+        await requestResetPassword(formData);
         console.log('Requested Reset Password on ', formData.email);
       }
 

@@ -1,9 +1,8 @@
 import { useEffect, useState, type JSX } from "react";
-import { outlineRarityColors, type ItemData } from "../types/ItemData";
+import { type ItemData } from "../types/ItemData";
 import { GachaPortrait, getUserItems, itemDatabase } from "../services/ItemServices";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import { authFetch } from "../helpers/AuthFetch";
 import { ENV } from "../helpers/EnvUtils";
 
 interface InventoryItem{
@@ -63,17 +62,14 @@ function Inventory() {
         if (items.length === 0) return;
         const elements : JSX.Element[] = []
     
-        let item_count = 0;
         for (let i = 0; i < sortedAndFilteredItems.length; i++){
           const itemData : ItemData = itemDatabase[sortedAndFilteredItems[i].itemId];
           for (let j = 0; j < sortedAndFilteredItems[i].quantity; j++){
-            const currentIdx = item_count;
             elements.push(
                 <button onClick={() => {displayItemDetail(itemData.itemId, j)}}>
                     <GachaPortrait key={itemData.itemId + ` ${j}`} itemId={itemData.itemId}/>
                 </button>
             );
-            item_count++;
           } 
         }
         return <>{elements}</>
@@ -134,7 +130,7 @@ function Inventory() {
         <>
             <div className="flex flex-col items-center justify-center">
                 <div className="h-[10vh]">
-                    
+                    {message}
                 </div>
                 <div className="md:w-1/5 mx-auto md:ml-5 max-w-50 p-2 my-2 overflow-hidden border border-slate-200 text-center md:text-left rounded-xl shadow-sm">
                     Fragments: {user?.pull_currency_fragment}
