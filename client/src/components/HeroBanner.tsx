@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Optional: Install lucide-react for clean icons
 import { useAuth } from '../contexts/AuthContext';
 import { isTokenValid } from '../helpers/TokenValidatorUtils';
+import nightBackground from "../assets/images/night-background.jpg";
+import greenWallpaper from "../assets/images/design/green-wp.avif";
+import devWallpaper from "../assets/images/design/dev-wallpaper.jpg";
 
 const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
     const { user, token } = useAuth();
@@ -9,7 +12,7 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
   // Sample data structure expected from your MERN backend
   const slides = [
     {
-      image: "images/night-background.jpg",
+      image: {nightBackground},
       title: "Gacha System",
       subtitle: "Get items and win rare stuffs. Test your luck now.",
       ctaText: "Try Gacha",
@@ -17,18 +20,18 @@ const HeroBanner = ({onHeroBannerClick}: {onHeroBannerClick : () => void}) => {
       ctaButton: (token && !isTokenValid(token) ? () => onHeroBannerClick() : () => onHeroBannerClick())
     },
     {
-      image: "images/design/green-wp.avif",
+      image: {greenWallpaper},
       title: "Full Stack Web Application",
       subtitle: "MERN Stack App with full authentication, payment system, and a Gacha System for proof of concept.",
       ctaText: "Show Details",
       ctaLink: "#system-details"
     },
     {
-      image: "images/design/dev-wallpaper.jpg",
+      image: {devWallpaper},
       title: "Developer",
       subtitle: "Take a look at the developer's portfolio and projects.",
       ctaText: "View Portfolio",
-      ctaLink: "/cv"
+      ctaLink: "/developer"
     }
   ];
 

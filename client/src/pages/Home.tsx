@@ -1,8 +1,8 @@
-import typescriptIcon from '../../public/images/typescript.png';
-import mernLogo from '../../public/images/design/MERN-logo.png';
-import authenticationLogo from '../../public/images/design/authentication.png';
-import tailwindLogo from '../../public/images/design/tailwind-logo.png';
-import stripePaymentImage from '../../public/images/design/stripe-payment-2.png';
+import typescriptIcon from '../assets/images/typescript.png';
+import mernLogo from '../assets/images/design/MERN-logo.png';
+import authenticationLogo from '../assets/images/design/authentication.png';
+import tailwindLogo from '../assets/images/design/tailwind-logo.png';
+import stripePaymentImage from '../assets/images/design/stripe-payment-2.png';
 import { motion } from 'framer-motion';
 import HeroBanner from '../components/HeroBanner';
 

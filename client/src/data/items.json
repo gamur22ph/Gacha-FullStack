@@ -3,7 +3,7 @@
     "itemId": "aemeath",
     "name": "Aemeath",
     "rarity": 5,
-    "iconPath": "/images/items/Aemeath.webp",
+    "iconPath": "images/items/Aemeath.webp",
     "description": "Look! A laser sword. Pretty KEwL RayyT???",
     "fragments": 20
   },
@@ -11,7 +11,7 @@
     "itemId": "leon",
     "name": "Leon",
     "rarity": 5,
-    "iconPath": "/images/items/leon.webp",
+    "iconPath": "images/items/leon.webp",
     "description": "Where's everyone going? Bingo?",
     "fragments": 20
   },
@@ -19,7 +19,7 @@
     "itemId": "ada",
     "name": "Ada",
     "rarity": 5,
-    "iconPath": "/images/items/ada.png",
+    "iconPath": "images/items/ada.png",
     "description": "Asian woman",
     "fragments": 20
   },
@@ -27,7 +27,7 @@
     "itemId": "doom_slayer",
     "name": "Doom Slayer",
     "rarity": 5,
-    "iconPath": "/images/items/doom_slayer.jpg",
+    "iconPath": "images/items/doom_slayer.jpg",
     "description": "Rip and Tear",
     "fragments": 20
   },
@@ -35,7 +35,7 @@
     "itemId": "divine_rapier",
     "name": "Divine Rapier",
     "rarity": 5,
-    "iconPath": "/images/items/divine_rapier.jpg",
+    "iconPath": "images/items/divine_rapier.jpg",
     "description": "So powerful, it cannot have a single owner. +250 Damage",
     "fragments": 20
   },
@@ -43,7 +43,7 @@
     "itemId": "bfg",
     "name": "BFG",
     "rarity": 5,
-    "iconPath": "/images/items/bfg.jfif",
+    "iconPath": "images/items/bfg.jfif",
     "description": "Single shot, destroys everything in its way.",
     "fragments": 20
   },
@@ -51,7 +51,7 @@
     "itemId": "tmp",
     "name": "TMP",
     "rarity": 4,
-    "iconPath": "/images/items/tmp.png",
+    "iconPath": "images/items/tmp.png",
     "description": "A Submachine Gun.",
     "fragments": 4
   },
@@ -59,7 +59,7 @@
     "itemId": "golden_apple",
     "name": "Golden Apple",
     "rarity": 4,
-    "iconPath": "/images/items/Golden_Apple.webp",
+    "iconPath": "images/items/Golden_Apple.webp",
     "description": "Shiny and gives bonus health",
     "fragments": 4
   },
@@ -67,7 +67,7 @@
     "itemId": "chicken_adobo",
     "name": "Chicken Adobo",
     "rarity": 4,
-    "iconPath": "/images/items/Chicken-Adobo.jpg",
+    "iconPath": "images/items/Chicken-Adobo.jpg",
     "description": "Chicken, Soy Sauce, Vinegar, Bayleaf and more.",
     "fragments": 4
   },
@@ -75,7 +75,7 @@
     "itemId": "watermelon",
     "name": "Watermelon",
     "rarity": 4,
-    "iconPath": "/images/items/watermelon.png",
+    "iconPath": "images/items/watermelon.png",
     "description": "Green Red Fruit, chunky watery.",
     "fragments": 4
   },
@@ -83,7 +83,7 @@
     "itemId": "blue_eyes_white_dragon",
     "name": "Blue Eyes White Dragon",
     "rarity": 4,
-    "iconPath": "/images/items/BEWD.jpg",
+    "iconPath": "images/items/BEWD.jpg",
     "description": "Yugioh Monster pulled out from the card",
     "fragments": 4
   },
@@ -91,7 +91,7 @@
     "itemId": "rat",
     "name": "Rat",
     "rarity": 3,
-    "iconPath": "/images/items/rat.webp",
+    "iconPath": "images/items/rat.webp",
     "description": "Squeak.",
     "fragments": 1
   },
@@ -99,7 +99,7 @@
     "itemId": "zombie",
     "name": "Zombie",
     "rarity": 3,
-    "iconPath": "/images/items/zombie.jpg",
+    "iconPath": "images/items/zombie.jpg",
     "description": "There's a zombie on your lawn.",
     "fragments": 1
   },
@@ -107,7 +107,7 @@
     "itemId": "imp_doom",
     "name": "Imp",
     "rarity": 3,
-    "iconPath": "/images/items/Imp_doom.webp",
+    "iconPath": "images/items/Imp_doom.webp",
     "description": "Demon that throws fireballs.",
     "fragments": 1
   },
@@ -115,7 +115,7 @@
     "itemId": "quail_egg",
     "name": "Quail Egg",
     "rarity": 3,
-    "iconPath": "/images/items/quail_egg.webp",
+    "iconPath": "images/items/quail_egg.webp",
     "description": "It is what it is.",
     "fragments": 1
   },
@@ -123,7 +123,7 @@
     "itemId": "dull_blade",
     "name": "Dull Blade",
     "rarity": 3,
-    "iconPath": "/images/items/dull_blade.png",
+    "iconPath": "images/items/dull_blade.png",
     "description": "A sword.",
     "fragments": 1
   }

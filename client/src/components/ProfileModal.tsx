@@ -1,4 +1,4 @@
-import typescriptIcon from '../../public/images/typescript.png'
+import typescriptIcon from '../assets/images/typescript.png'
 import { useForm, type FieldValues, type SubmitHandler } from "react-hook-form";
 import type { ProfileModalProps } from '../props/ProfileModalProps';
 import { useAuth } from '../contexts/AuthContext';

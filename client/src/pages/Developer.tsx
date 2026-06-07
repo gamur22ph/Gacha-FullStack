@@ -1,9 +1,9 @@
 import GameShowcase from "../components/GameShowcase"
-import githubIcon from "../../public/images/socials/github-icon.webp"
-import linkedInIcon from "../../public/images/socials/linkedin.png"
-import itchIoIcon from "../../public/images/socials/itchio-icon.svg"
-import resumeIcon from "../../public/images/dev/profile.svg";
-import portfoliosIcon from "../../public/images/dev/project-portfolio.png";
+import githubIcon from "../assets/images/socials/github-icon.webp"
+import linkedInIcon from "../assets/images/socials/linkedin.png"
+import itchIoIcon from "../assets/images/socials/itchio-icon.svg"
+import resumeIcon from "../assets/images/dev/profile.svg";
+import portfoliosIcon from "../assets/images/dev/project-portfolio.png";
 
 function Developer() {
 
