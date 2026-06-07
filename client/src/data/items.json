@@ -3,7 +3,7 @@
     "itemId": "aemeath",
     "name": "Aemeath",
     "rarity": 5,
-    "iconPath": "/src/assets/items/Aemeath.webp",
+    "iconPath": "/public/assets/items/Aemeath.webp",
     "description": "Look! A laser sword. Pretty KEwL RayyT???",
     "fragments": 20
   },
@@ -11,7 +11,7 @@
     "itemId": "leon",
     "name": "Leon",
     "rarity": 5,
-    "iconPath": "/src/assets/items/leon.webp",
+    "iconPath": "/public/assets/items/leon.webp",
     "description": "Where's everyone going? Bingo?",
     "fragments": 20
   },
@@ -19,7 +19,7 @@
     "itemId": "ada",
     "name": "Ada",
     "rarity": 5,
-    "iconPath": "/src/assets/items/ada.png",
+    "iconPath": "/public/assets/items/ada.png",
     "description": "Asian woman",
     "fragments": 20
   },
@@ -27,7 +27,7 @@
     "itemId": "doom_slayer",
     "name": "Doom Slayer",
     "rarity": 5,
-    "iconPath": "/src/assets/items/doom_slayer.jpg",
+    "iconPath": "/public/assets/items/doom_slayer.jpg",
     "description": "Rip and Tear",
     "fragments": 20
   },
@@ -35,7 +35,7 @@
     "itemId": "divine_rapier",
     "name": "Divine Rapier",
     "rarity": 5,
-    "iconPath": "/src/assets/items/divine_rapier.jpg",
+    "iconPath": "/public/assets/items/divine_rapier.jpg",
     "description": "So powerful, it cannot have a single owner. +250 Damage",
     "fragments": 20
   },
@@ -43,7 +43,7 @@
     "itemId": "bfg",
     "name": "BFG",
     "rarity": 5,
-    "iconPath": "/src/assets/items/bfg.jfif",
+    "iconPath": "/public/assets/items/bfg.jfif",
     "description": "Single shot, destroys everything in its way.",
     "fragments": 20
   },
@@ -51,7 +51,7 @@
     "itemId": "tmp",
     "name": "TMP",
     "rarity": 4,
-    "iconPath": "/src/assets/items/tmp.png",
+    "iconPath": "/public/assets/items/tmp.png",
     "description": "A Submachine Gun.",
     "fragments": 4
   },
@@ -59,7 +59,7 @@
     "itemId": "golden_apple",
     "name": "Golden Apple",
     "rarity": 4,
-    "iconPath": "/src/assets/items/Golden_Apple.webp",
+    "iconPath": "/public/assets/items/Golden_Apple.webp",
     "description": "Shiny and gives bonus health",
     "fragments": 4
   },
@@ -67,7 +67,7 @@
     "itemId": "chicken_adobo",
     "name": "Chicken Adobo",
     "rarity": 4,
-    "iconPath": "/src/assets/items/Chicken-Adobo.jpg",
+    "iconPath": "/public/assets/items/Chicken-Adobo.jpg",
     "description": "Chicken, Soy Sauce, Vinegar, Bayleaf and more.",
     "fragments": 4
   },
@@ -75,7 +75,7 @@
     "itemId": "watermelon",
     "name": "Watermelon",
     "rarity": 4,
-    "iconPath": "/src/assets/items/watermelon.png",
+    "iconPath": "/public/assets/items/watermelon.png",
     "description": "Green Red Fruit, chunky watery.",
     "fragments": 4
   },
@@ -83,7 +83,7 @@
     "itemId": "blue_eyes_white_dragon",
     "name": "Blue Eyes White Dragon",
     "rarity": 4,
-    "iconPath": "/src/assets/items/BEWD.jpg",
+    "iconPath": "/public/assets/items/BEWD.jpg",
     "description": "Yugioh Monster pulled out from the card",
     "fragments": 4
   },
@@ -91,7 +91,7 @@
     "itemId": "rat",
     "name": "Rat",
     "rarity": 3,
-    "iconPath": "/src/assets/items/rat.webp",
+    "iconPath": "/public/assets/items/rat.webp",
     "description": "Squeak.",
     "fragments": 1
   },
@@ -99,7 +99,7 @@
     "itemId": "zombie",
     "name": "Zombie",
     "rarity": 3,
-    "iconPath": "/src/assets/items/zombie.jpg",
+    "iconPath": "/public/assets/items/zombie.jpg",
     "description": "There's a zombie on your lawn.",
     "fragments": 1
   },
@@ -107,7 +107,7 @@
     "itemId": "imp_doom",
     "name": "Imp",
     "rarity": 3,
-    "iconPath": "/src/assets/items/Imp_doom.webp",
+    "iconPath": "/public/assets/items/Imp_doom.webp",
     "description": "Demon that throws fireballs.",
     "fragments": 1
   },
@@ -115,7 +115,7 @@
     "itemId": "quail_egg",
     "name": "Quail Egg",
     "rarity": 3,
-    "iconPath": "/src/assets/items/quail_egg.webp",
+    "iconPath": "/public/assets/items/quail_egg.webp",
     "description": "It is what it is.",
     "fragments": 1
   },
@@ -123,7 +123,7 @@
     "itemId": "dull_blade",
     "name": "Dull Blade",
     "rarity": 3,
-    "iconPath": "/src/assets/items/dull_blade.png",
+    "iconPath": "/public/assets/items/dull_blade.png",
     "description": "A sword.",
     "fragments": 1
   }
