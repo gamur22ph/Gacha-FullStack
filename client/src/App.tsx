@@ -31,7 +31,8 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    // <div className='flex flex-col min-h-screen'></div>
+    <BrowserRouter basename='/Gacha-FullStack'>
       {/* Navigation - These stay on screen across all pages */}
       <nav className="sticky top-0 left-0 right-0 z-50 bg-green-800 shadow-md text-white">
         <div className='flex p-4 items-center justify-between gap-4'>
