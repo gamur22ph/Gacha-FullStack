@@ -3,9 +3,9 @@ name: Front-end Deploy
 on:
   push:
     branches:
-    - "main"
-  paths:
-    - 'client/**'
+      - "main"
+    paths:
+      - 'client/**'
   workflow_dispatch:
 
 permissions:
