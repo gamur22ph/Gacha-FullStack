@@ -32,11 +32,14 @@ jobs:
         with:
           node-version: 24
           cache: 'npm'
+          cache-dependency-path: './client/package-lock.json'
 
       - name: Install Dependencies
+        working-directory: ./client
         run: npm ci
 
       - name: Build Project
+        working-directory: ./client
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
         run: npm run build
