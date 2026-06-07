@@ -15,7 +15,7 @@ export const item3Stars = Object.values(itemDatabase).filter((item) => item.rari
 
 export const GachaPortrait = ({itemId }: {itemId : string}) =>{
     const itemDetails = itemDatabase[itemId];
-
+    console.log(itemDetails.iconPath);
     if (!itemDetails) return (<>Loading</>);
     return (
     <div key={itemId} className={`bg-blue-950 w-24 h-24 outline-2 ${outlineRarityColors[itemDetails.rarity]} hover:bg-blue-700 hover:scale-110 transition-colors`}>
