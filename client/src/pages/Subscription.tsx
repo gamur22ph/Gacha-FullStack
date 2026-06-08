@@ -63,7 +63,7 @@ function Subscription({ onNoUser } : SubscriptionProps) {
                 {/* Pro (Paid) */}
                 <div className="w-9/10 md:w-120 h-100 bg-gray-100 rounded-2xl p-4">
                     <h1 className="text-2xl"><b>Pro</b></h1>
-                    <p className="text-sm text-gray-600">For people who wants to obtain more items.</p>
+                    <p className="text-sm text-gray-600">For people who wants to obtain more items. (Currently Free)</p>
                     <br/>
                     <div className="flex w-full">
                         <div className="w-full">
@@ -97,6 +97,10 @@ function Subscription({ onNoUser } : SubscriptionProps) {
                         <div className="w-full flex-col p-4 text-sm text-gray-600">
                             <p>Free 10 Pulls on first time subscription</p>
                             <p>15 Daily Coins for pulling items</p>
+                        </div>
+                        <p className="text-sm"><b>Note:</b></p>
+                        <div className="w-full flex-col p-4 text-sm text-gray-600">
+                            <p>Input any card and it'll work, use dummy or "4242 4242 4242 4242"</p>
                         </div>
                     </div>
                 </div>
