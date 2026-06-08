@@ -22,6 +22,8 @@ export const handleStripeWebHook = async (req: Request, res: Response) => {
         return;
     }
 
+    console.log("Webhook working...")
+
     // Handle the event types using type narrowing
     switch (event.type) {
         case 'checkout.session.completed': {
@@ -34,7 +36,7 @@ export const handleStripeWebHook = async (req: Request, res: Response) => {
         if (!userId){
             return res.status(400).json({message : "User not found."})
         }
-        
+        console.log(user?.username + " Subscribing...")
         if (user?.is_first_time_subscription){
             user.pull_currency += 10;
             user.is_first_time_subscription = false;
@@ -42,6 +44,7 @@ export const handleStripeWebHook = async (req: Request, res: Response) => {
         }
 
         if (user) {
+            console.log(user.username + "Activating Subscription...")
             await user.updateOne({
                 stripe_customer_id: session.customer as string,
                 subscription_id: session.subscription as string,
