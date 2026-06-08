@@ -3,6 +3,8 @@ import mernLogo from '../assets/images/design/MERN-logo.png';
 import authenticationLogo from '../assets/images/design/authentication.png';
 import tailwindLogo from '../assets/images/design/tailwind-logo.png';
 import stripePaymentImage from '../assets/images/design/stripe-payment-2.png';
+import dockerImage from '../assets/images/docker-icon.webp';
+import awsImage from '../assets/images/aws-icon.webp';
 import { motion } from 'framer-motion';
 import HeroBanner from '../components/HeroBanner';
 
@@ -117,6 +119,40 @@ const Home = ({ onHeroBannerClick } : {onHeroBannerClick : () => void}) => {
                         </div>
                         <div className="w-full flex justify-center items-center ">
                             <img src={stripePaymentImage} className="base" width="250" height="250" alt="" /><br/>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+            {/* Docker */}
+            <div className="bg-[#121212] w-full">
+                <div className='w-full text-center mx-auto text-white text-4xl p-8'>Containerization</div>
+                <div className="w-full flex justify-center py-8">
+                    <motion.div className='w-9/10 md:w-3/5 h-full self-center flex'
+                    initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} >
+                        <div className="w-full flex justify-center items-center ">
+                            <img src={dockerImage} className="base" width="250" height="250" alt="" /><br/>
+                        </div>
+                        <div className="w-full flex justify-center items-center ">
+                            <p className='md:text-2xl text-white'>
+                                <span className='text-[#0db7ed]'>Docker</span> allows to build the app on an image, ensures cross platform compatibility and works exactly as it is in local development.
+                            </p>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+            {/* AWS */}
+            <div className="bg-[#121212] w-full">
+                <div className='w-full text-center mx-auto text-white text-4xl p-8'>Cloud-based Server</div>
+                <div className="w-full flex justify-center py-8">
+                    <motion.div className='w-9/10 md:w-3/5 h-full self-center flex'
+                    initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} >
+                        <div className="w-full flex justify-center items-center ">
+                            <p className='md:text-2xl text-white'>
+                                The application's backend is deployed in <span className='text-[#FF9900]'>AWS</span> EC2 Instance using Ubuntu as OS
+                            </p>
+                        </div>
+                        <div className="w-full flex justify-center items-center ">
+                            <img src={awsImage} className="base" width="250" height="250" alt="" /><br/>
                         </div>
                     </motion.div>
                 </div>
